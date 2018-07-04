@@ -1,0 +1,469 @@
+/*--------------------------------------------------------*/
+/* 01 - RESET STYLES                                      */
+/*--------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+strong {
+    font-weight: 600;
+}
+img {
+    max-width: 100%;
+}
+ol, ul {
+    list-style: none;
+    margin: 1em 0;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+textarea {
+    resize: vertical;
+    font-size: 14px;
+    color: #666666;
+}
+a, a:link, a:visited, a:active, a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+select, option{
+    -moz-appearance : none;
+    -webkit-appearance : none;
+    background : none;
+}
+table td {
+    padding: 10px;
+}
+ol{
+    list-style: decimal;
+    list-style-position: inside;
+}
+ul{
+    list-style-type: none;
+}
+.content ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+i{
+    font-style: italic;
+}
+em, i{
+    font-weight: 300
+}
+
+
+
+a{
+    color: #8c1916;
+    font-weight: 400;
+    font-size: inherit;
+}
+h1{
+    font-size: 47px;
+    color: #8c1916;
+    font-weight: 300;
+}
+h2{
+    font-size: 34px;
+    color: #8c1916;
+    font-weight: 300;
+}
+h3{
+    font-size: 22px;
+    margin: 20px 0 10px;
+}
+p + h3{
+    margin-top: 30px;
+}
+h4{
+    color: #007c92;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+h5{
+    font-size: 24px;
+}
+h6{
+    font-size: 22px;
+}
+h1 + p{
+    margin-top: 10px;
+}
+
+hr {
+    margin-top: 4%;
+    border: none;
+    background-color: #ccc;
+    height: 1px;
+}
+p, li{
+    /*line-height: 26px;*/
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+h1 + p{
+    font-size: 22px;
+}
+
+
+
+/**************************************************************/
+
+.white-background{
+    background-color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.btn-white {
+    color: #007c92;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-white-outline {
+    color: #fff;
+    background-color: transparent;
+    border-color: #dfdfdf;
+}
+.btn-white-blue{
+    border-color: #007c92;
+    color: #007c92;
+    background-color: #fff;
+}
+.btn-white:hover,
+.btn-white-outline:hover,
+.btn-white-blue:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.btn-gray{
+    color: #fff;
+    background-color: #4e4f53;
+    border-color: #4e4f53;
+}
+.btn-gray:hover,
+.btn-gray.active
+{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #851b1b;
+    border-color: #851b1b;
+}
+.btn-red-outline {
+    color: #851b1b;
+    background-color: transparent;
+    border-color: #851b1b;
+}
+.btn-red:hover,
+.btn-red-outline:hover,
+.btn-red.active,
+.btn-red-outline.active
+{
+    color: #fff;
+    background-color: #a34745;
+    border-color: #a34745;
+}
+.btn-xl {
+    padding: 15px 45px;
+    font-size: 21px;
+    line-height: 2;
+    /*border-radius: 10px;*/
+}
+.btn-lg {
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 1.7;
+    /*border-radius: 7px;*/
+}
+.btn-md {
+    padding: 7px 15px;
+    font-size: 17px;
+    line-height: 1.5;
+    /*border-radius: 5px;*/
+}
+.btn-sm {
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 1.333333;
+    /*border-radius: 4px;*/
+}
+.btn-xs {
+    padding: 1px 4px;
+    font-size: 12px;
+    line-height: 1;
+    /*border-radius: 3px;*/
+}
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn-100{ min-width: 100px; }
+.btn-150{ min-width: 150px; }
+.btn-160{ min-width: 160px; }
+.btn-170{ min-width: 170px; }
+
+
+/**************************************************************/
+.clear:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.relative {
+    position: relative;
+}
+.col{
+    float: left;
+    position: relative;
+}
+.col-100{ width: 100%; }
+.col-90{ width: 90%; }
+.col-95{ width: 95%; }
+.col-80{ width: 80%; }
+.col-75{ width: 75%; }
+.col-70{ width: 70%; }
+.col-66{ width: 66.6666%; }
+.col-65{ width: 65%; }
+.col-60{ width: 60%; }
+.col-50{ width: 50%; }
+.col-55{ width: 55%; }
+.col-40{ width: 40%; }
+.col-35{ width: 35%; }
+.col-30{ width: 30%; }
+.col-33{ width: 33.3333%; }
+.col-25{ width: 25%; }
+.col-20{ width: 20%; }
+.col-16{ width: 16.6666%; }
+.col-10{ width: 10%; }
+.col-5{ width: 5%; }
+
+.width10 {    width: 10%;}
+.width15 {    width: 15%;}
+.width17 {    width: 17%;}
+.width20 {    width: 20%;}
+.width21 {    width: 21%;}
+.width25 {    width: 25%;}
+.width29 {    width: 29%;}
+.width30 {    width: 30%;}
+.width31 {    width: 31%;}
+.width32 {    width: 32%;}
+.width33 {    width: 33%;}
+.width35 {    width: 35%;}
+.width37 {    width: 37%;}
+.width40 {    width: 40%;}
+.width45 {    width: 45%;}
+.width48 {    width: 48%;}
+.width50 {    width: 50%;}
+.width55 {    width: 55%;}
+.width60 {    width: 60%;}
+.width64 {    width: 64%;}
+.width65 {    width: 65%;}
+.width66 {    width: 66%;}
+.width70 {    width: 70%;}
+.width74 {    width: 74%;}
+.width75 {    width: 75%;}
+.width77 {    width: 77%;}
+.width80 {    width: 80%;}
+.width83 {    width: 83%;}
+.width80 {    width: 80%;}
+.width85 {    width: 85%;}
+.width90 {    width: 90%;}
+.width95 {    width: 95%;}
+.width100 {    width: 100%;}
+
+.left{ float: left; }
+.right{ float: right; }
+
+
+.align_justify {
+    text-align: justify;
+}
+.align_center {
+    text-align: center;
+}
+.align_right {
+    text-align: right;
+}
+.align_left {
+    text-align: left;
+}
+.padding-bottom-0{
+    padding-bottom: 0!important;
+}
+.padding-bottom-90{
+    padding-bottom: 90px!important;
+}
+
+.padding3p-0 {
+    padding: 3% 0;
+}
+.padding5p-0 {
+    padding: 5% 0;
+}
+
+.padding-top-0{
+    padding-top: 0 !important;
+}
+.padding_top10 {
+    padding-top: 10px;
+}
+.padding_top20 {
+    padding-top: 20px;
+}
+.padding-top-20 {
+    padding-top: 20px;
+}
+.padding_top40 {
+    padding-top: 40px;
+}
+.padding_top1p{
+    padding-top: 1%;
+}
+.padding_top2p{
+    padding-top: 2%;
+}
+.padding_top3p {
+    padding-top: 3%;
+}
+.padding_top5p {
+    padding-top: 5%;
+}
+.padding_bottom10p {
+    padding-bottom: 10%;
+}
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+.margin_top2p {
+     margin-top: 2%;
+}
+.margin_top3p {
+    margin-top: 3%;
+}
+.margin_top5p {
+    margin-top: 5%;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.margin-left-60{
+    margin-left: 60px;
+}
+
+.margin-b-40{
+    margin-bottom: 40px;
+}
+.margin-b-20{
+    margin-bottom: 20px;
+}
+.margin-bottom-0{
+    margin-bottom: 0;
+}
+
+.margin-right-0{
+    margin-right: 0 !important;
+}
+
+.weight-lite{
+    font-weight: 300;
+}
+.no-border{ border: none!important; }
+
+/*******************/
+
+.black{
+    color: #4e5053;
+}
+.blue{
+    color: #007c92;
+}
+.dark-red{
+    color: #a80533;
+}
+.white{
+    color: #fff;
+}
+.green{
+    color: #009a76;
+}
+.bold{
+    font-weight: 600;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-14{
+    font-size: 14px;
+}
